@@ -105,7 +105,7 @@ function App() {
                 </TableCell>
                 <TableCell size="small">
                   <Typography>
-                    Clear Counter
+                    Decrement Counter
                   </Typography>
                 </TableCell>
               </TableRow>
@@ -129,8 +129,8 @@ function App() {
                 {Number((ghCount/totalCount)*100).toFixed(2)}
               </TableCell>
               <TableCell size={'small'}>
-                <Button variant="contained" onClick={() => updateGhCount(0)}>
-                  Clear
+                <Button variant="contained" onClick={() => updateGhCount(ghCount-1)}>
+                  Remove
                 </Button>
               </TableCell>
             </TableRow>
@@ -152,8 +152,8 @@ function App() {
                 {Number((srCount/totalCount)*100).toFixed(2)}
               </TableCell>
               <TableCell size={'small'}>
-                <Button variant="contained" onClick={() => updateSrCount(0)}>
-                  Clear
+                <Button variant="contained" onClick={() => updateSrCount(srCount-1)}>
+                  Remove
                 </Button>
               </TableCell>
             </TableRow>
@@ -175,8 +175,8 @@ function App() {
                 {Number((bobCount/totalCount)*100).toFixed(2)}
               </TableCell>
               <TableCell size={'small'}>
-                <Button variant="contained" onClick={() => updateBobCount(0)}>
-                  Clear
+                <Button variant="contained" onClick={() => updateBobCount(bobCount-1)}>
+                  Remove
                 </Button>
               </TableCell>
             </TableRow>
@@ -198,8 +198,8 @@ function App() {
                 {Number((ouCount/totalCount)*100).toFixed(2)}
               </TableCell>
               <TableCell size={'small'}>
-                <Button variant="contained" onClick={() => updateOuCount(0)}>
-                  Clear
+                <Button variant="contained" onClick={() => updateOuCount(ouCount-1)}>
+                  Remove
                 </Button>
               </TableCell>
             </TableRow>
@@ -221,8 +221,8 @@ function App() {
                 {Number((ddCount/totalCount)*100).toFixed(2)}
               </TableCell>
               <TableCell size={'small'}>
-                <Button variant="contained" onClick={() => updateDdCount(0)}>
-                  Clear
+                <Button variant="contained" onClick={() => updateDdCount(ddCount-1)}>
+                  Remove
                 </Button>
               </TableCell>
             </TableRow>
@@ -244,8 +244,8 @@ function App() {
                 {Number((noWeaponsCount/totalCount)*100).toFixed(2)}
               </TableCell>
               <TableCell size={'small'}>
-                <Button variant="contained" onClick={() => updateNoWeaponsCount(0)}>
-                  Clear
+                <Button variant="contained" onClick={() => updateNoWeaponsCount(noWeaponsCount-1)}>
+                  Remove
                 </Button>
               </TableCell>
             </TableRow>
@@ -267,8 +267,8 @@ function App() {
                 
               </TableCell>
               <TableCell size={'small'}>
-                <Button variant="contained" onClick={() => updateTotalCount(0)}>
-                  Clear
+                <Button variant="contained" onClick={() => updateTotalCount(totalCount-1)}>
+                  Remove
                 </Button>
               </TableCell>
             </TableRow>
